@@ -1,4 +1,4 @@
 Hello Hexlet my first course
+This project is my first in Hexlet 
 
-
-hi
+Don't worry my English is bad))
