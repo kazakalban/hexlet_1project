@@ -11,5 +11,5 @@ publish: #имитирует процесс публикации пакета н
 	poetry publish --dry-run
 
 package-install: # устанавливает скомпилированный пакет из файла .whl (расположенного в папке dist) для текущего пользователя без затрагивания системных пакетов.
-	python3 -m pip install --user dist/*.whl
+	python3 -m pip install --user dist/*.whl --force-reinstall
 
