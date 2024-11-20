@@ -13,3 +13,5 @@ publish: #имитирует процесс публикации пакета н
 package-install: # устанавливает скомпилированный пакет из файла .whl (расположенного в папке dist) для текущего пользователя без затрагивания системных пакетов.
 	python3 -m pip install --user dist/*.whl --force-reinstall
 
+lint: # проеверяет код на flake8
+	poetry run flake8 brain_games
