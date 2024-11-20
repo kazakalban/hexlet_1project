@@ -45,4 +45,4 @@ doc
 .idea/
 app/assets/builds/
 
-/errors
+#/errors
