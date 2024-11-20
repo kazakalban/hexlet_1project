@@ -56,3 +56,22 @@ git config --global user.email
 Вопрос не могу зайти code climate  При регистрации выбирайте ветку Quality
 Ответ Заходишь вот сюда, регистрируешься через github:
         https://codeclimate.com/quality
+
+Вопрос Разместите в ридми бейджик Maintainability своего проекта (см. раздел Repo Settings -> Extras -> Badges)
+Ответ Для добавления бейджа Maintainability в README вашего проекта на GitHub, вам нужно выполнить следующие шаги:
+1. Получите ссылку на бейдж
+
+Перейдите в раздел Repo Settings на codeclimate, затем в Extras -> Badges. Найдите бейдж для Maintainability (он обычно используется для оценки поддерживаемости кода) и скопируйте ссылку для бейджа.
+2. Добавьте бейдж в README
+
+После того как вы скопировали ссылку, вставьте её в ваш README.md файл с использованием синтаксиса Markdown.
+
+Пример добавления бейджа в README.md:
+
+# My Project
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/your-badge-id/maintainability)](https://codeclimate.com/github/your-github-username/your-repo)
+
+... остальная информация о проекте
+
+Замените your-badge-id и your-github-username/your-repo на свои собственные значения, которые будут указаны на странице с бейджем.
