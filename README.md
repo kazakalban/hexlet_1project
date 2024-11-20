@@ -1,3 +1,6 @@
+[![Maintainability](https://api.codeclimate.com/v1/badges/fb65680623d9149df103/maintainability)](https://codeclimate.com/github/kazakalban/python-project-49/maintainability)
+
+
 Hello Hexlet my first course
 This project is my first in Hexlet 
 
