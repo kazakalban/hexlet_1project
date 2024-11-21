@@ -4,6 +4,9 @@ install: # устанавливает зависимости проекта из
 brain-games: #выполняет команду poetry run brain-games
 	poetry run brain-games
 
+brain-even: #выполняет команду poetry run brain-even
+	poetry run brain-even
+
 build: #создаёт дистрибутивы проекта (форматы sdist и wheel) на основе pyproject.toml. Это нужно для публикации или распространения пакета.
 	poetry build
 
