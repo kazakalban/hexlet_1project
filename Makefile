@@ -18,3 +18,5 @@ package-install: # устанавливает скомпилированный �
 
 lint: # проеверяет код на flake8
 	poetry run flake8 brain_games
+add_git_package-install:
+	git add dist/hexlet_code-0.1.0-py3-none-any.whl dist/hexlet_code-0.1.0.tar.gz
