@@ -8,9 +8,8 @@ def game_parity_check():
     print('Answer "yes" if the number is even, otherwise answer "no".')
     correct_answer = 0
     while correct_answer != 3:
-        ask_user_number_text = 'Question:'
         number = randint(1, 100)
-        print(f'{ask_user_number_text} {number}')
+        print(f'Question: {number}')
         user_answer = prompt.string('Your answer: ')
         if number % 2 == 0 and user_answer == 'yes':
             print("Correct!")
@@ -27,7 +26,7 @@ def game_parity_check():
                       f"Let's try again, {user_name}!")
             break
         else:
-            print('Incorrect answer')
+            print(f"Incorrect answer. Let's try again, {user_name}!")
             break
         if correct_answer == 3:
             print(f'Congratulations, {user_name}!')
