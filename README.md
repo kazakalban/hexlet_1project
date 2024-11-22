@@ -10,4 +10,5 @@ Don't worry my English is bad))
 test github 19.11.2024
 
 
-show 1-project 5- step https://asciinema.org/a/F7SH3ltXwWMXs7ckCgL1FnUWk
+show 1-project 5- step 
+[![asciicast](https://asciinema.org/a/F7SH3ltXwWMXs7ckCgL1FnUWk.svg)](https://asciinema.org/a/F7SH3ltXwWMXs7ckCgL1FnUWk)
