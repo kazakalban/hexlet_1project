@@ -7,6 +7,9 @@ brain-games: #выполняет команду poetry run brain-games
 brain-even: #выполняет команду poetry run brain-even
 	poetry run brain-even
 
+brain-calc: #выполняет команду poetry run brain-calc
+	poetry run brain-calc
+
 build: #создаёт дистрибутивы проекта (форматы sdist и wheel) на основе pyproject.toml. Это нужно для публикации или распространения пакета.
 	poetry build
 
