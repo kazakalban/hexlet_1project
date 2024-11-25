@@ -12,3 +12,6 @@ test github 19.11.2024
 
 show 1-project 5- step 
 [![asciicast](https://asciinema.org/a/F7SH3ltXwWMXs7ckCgL1FnUWk.svg)](https://asciinema.org/a/F7SH3ltXwWMXs7ckCgL1FnUWk)
+
+show 1-project 6-step
+[![asciicast](https://asciinema.org/a/Q4BuVghsYnfT28PHk9Y2CgYm8.svg)](https://asciinema.org/a/Q4BuVghsYnfT28PHk9Y2CgYm8)
