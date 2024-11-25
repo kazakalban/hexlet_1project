@@ -1,13 +1,14 @@
 from brain_games.cli import welcome_user as main_user_name
+from brain_games.scripts.brain_games import max_raund_game as max_raund  # Импорт количества раунда
 from random import randint
 import prompt
 
 
-def game_parity_check():
+def game_parity_check(max_raund):
     user_name = main_user_name()
     print('Answer "yes" if the number is even, otherwise answer "no".')
     correct_answer = 0
-    while correct_answer != 3:
+    while correct_answer != max_raund:
         number = randint(1, 100)
         print(f'Question: {number}')
         user_answer = prompt.string('Your answer: ')
@@ -33,7 +34,7 @@ def game_parity_check():
 
 
 def main():
-    game_parity_check()
+    game_parity_check(max_raund)
 
 
 if __name__ == "__main__":
