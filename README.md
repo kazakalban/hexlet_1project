@@ -15,3 +15,6 @@ show 1-project 5- step
 
 show 1-project 6-step
 [![asciicast](https://asciinema.org/a/Q4BuVghsYnfT28PHk9Y2CgYm8.svg)](https://asciinema.org/a/Q4BuVghsYnfT28PHk9Y2CgYm8)
+
+show 1-project 7-step
+[![asciicast](https://asciinema.org/a/wFkOfznBENw5UeDrIbXFyTQe5.svg)](https://asciinema.org/a/wFkOfznBENw5UeDrIbXFyTQe5)
