@@ -9,7 +9,7 @@ def find_progression(max_raund):
     print('What number is missing in the progression?')
     correct_answer = 0
     while max_raund != correct_answer:
-        number_start = randint(1, 10)  # старт 
+        number_start = randint(1, 10)  # старт
         progress_list = []  # массив чисел
         number_progress = randint(2, 5)  # прогресс
         list_len = randint(5, 10)  # длина массива
@@ -18,10 +18,9 @@ def find_progression(max_raund):
             number_start += number_progress
             progress_list.append(number_start)
 
-        secret_position = randint(0, list_len-1)  # определим позицию для скрытия
+        secret_position = randint(0, list_len - 1)  # определим позицию для скрытия
         secret_number = progress_list[secret_position]  # сохраняем правильный число
         progress_list[secret_position] = '..'
-        #print(*progress_list)
         print('Question: ', *progress_list)
         user_answer = prompt.integer('Your answer: ')
         if user_answer == secret_number:
