@@ -7,8 +7,8 @@ import prompt
 def find_progression(max_raund):
     user_name = main_user_name()
     print('What number is missing in the progression?')
-    current_answer = 0
-    while max_raund != current_answer:
+    correct_answer = 0
+    while max_raund != correct_answer:
         number_start = randint(1, 10)  # старт 
         progress_list = []  # массив чисел
         number_progress = randint(2, 5)  # прогресс
@@ -26,11 +26,13 @@ def find_progression(max_raund):
         user_answer = prompt.integer('Your answer: ')
         if user_answer == secret_number:
             print('Correct!')
-            current_answer += 1
+            correct_answer += 1
         else:
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{secret_number}'\n"
                   f"Let's try again,{user_name}!")
             break
+        if correct_answer == 3:
+            print(f'Congratulations, {user_name}!')
 
 
 def main():
