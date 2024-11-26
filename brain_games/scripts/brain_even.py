@@ -20,10 +20,10 @@ def game_parity_check(max_raund):
             correct_answer += 1
         elif user_answer == 'yes' or user_answer == 'no':
             if user_answer == 'yes':
-                print(f"'{user_answer}' is wrong answer ;(. Correct answer was 'no'."
+                print(f"'{user_answer}' is wrong answer ;(. Correct answer was 'no'.\n"
                       f"Let's try again, {user_name}!")
             elif user_answer == 'no':
-                print(f"'{user_answer}' is wrong answer ;(. Correct answer was 'yes'."
+                print(f"'{user_answer}' is wrong answer ;(. Correct answer was 'yes'.\n"
                       f"Let's try again, {user_name}!")
             break
         else:

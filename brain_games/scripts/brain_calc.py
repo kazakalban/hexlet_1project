@@ -26,7 +26,7 @@ def game_calc(max_raund):
             print('Correct!')
             correct_answer += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_result}'"
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_result}'\n"
                   f"Let's try again, {user_name}!")
             break
         if correct_answer == 3:
