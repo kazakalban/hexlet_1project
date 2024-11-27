@@ -27,14 +27,22 @@ def number_is_prime(max_raund):
         print(f'Question: {number}')
         
         user_answer = prompt.string('Your answer: ')
-        if chek_is_prime_number(number) and user_answer == 'no':
+        if chek_is_prime_number(number) and user_answer == 'yes':
             print("Correct!")
             correct_answer += 1
-        elif chek_is_prime_number(number) and user_answer != 'yes':
+        elif chek_is_prime_number(number) != True and user_answer == 'no':
             print("Correct!")
             correct_answer += 1
+        elif user_answer == 'yes' or user_answer == 'no':
+            if user_answer == 'yes':
+                print(f"'{user_answer}' is wrong answer ;(. Correct answer was 'no'.\n"
+                      f"Let's try again, {user_name}!")
+            elif user_answer == 'no':
+                print(f"'{user_answer}' is wrong answer ;(. Correct answer was 'yes'.\n"
+                      f"Let's try again, {user_name}!")
+            break
         else:
-            print("lets try agan", "yes" if user_answer == 'no' else 'no')
+            print(f"Incorrect answer. Let's try again, {user_name}!")
             break
         if correct_answer == 3:
             print(f'Congratulations, {user_name}!')
