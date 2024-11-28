@@ -15,14 +15,11 @@ def game_parity_check(max_raund):
         number = randint(1, 100)
         print(f'Question: {number}')
         user_answer = prompt.string('Your answer: ')
-        user_answer = True if user_answer == 'yes' else user_answer = False
-        if is_even(number) and user_answer:
+        answer = True if user_answer == 'yes' else False
+        if is_even(number) and answer:
             print("Correct!")
             correct_answer += 1
-        elif is_even(number) and user_answer:
-            print("Correct!")
-            correct_answer += 1
-        elif user_answer == True or user_answer == False:
+        elif answer and is_even(number):
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was 'no'.\n"
                       f"Let's try again, {user_name}!") if user_answer == True else print(f"'{user_answer}' is wrong answer ;(. Correct answer was 'yes'.\n"
                       f"Let's try again, {user_name}!")
