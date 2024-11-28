@@ -4,6 +4,9 @@ from random import randint
 import prompt
 
 
+def is_even(number:int) -> bool:
+    return True if number % 2 == 0 else False
+
 def game_parity_check(max_raund):
     user_name = main_user_name()
     print('Answer "yes" if the number is even, otherwise answer "no".')
@@ -12,18 +15,16 @@ def game_parity_check(max_raund):
         number = randint(1, 100)
         print(f'Question: {number}')
         user_answer = prompt.string('Your answer: ')
-        if number % 2 == 0 and user_answer == 'yes':
+        user_answer = True if user_answer == 'yes' else user_answer = False
+        if is_even(number) and user_answer:
             print("Correct!")
             correct_answer += 1
-        elif number % 2 == 1 and user_answer == 'no':
+        elif is_even(number) and user_answer:
             print("Correct!")
             correct_answer += 1
-        elif user_answer == 'yes' or user_answer == 'no':
-            if user_answer == 'yes':
-                print(f"'{user_answer}' is wrong answer ;(. Correct answer was 'no'.\n"
-                      f"Let's try again, {user_name}!")
-            elif user_answer == 'no':
-                print(f"'{user_answer}' is wrong answer ;(. Correct answer was 'yes'.\n"
+        elif user_answer == True or user_answer == False:
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was 'no'.\n"
+                      f"Let's try again, {user_name}!") if user_answer == True else print(f"'{user_answer}' is wrong answer ;(. Correct answer was 'yes'.\n"
                       f"Let's try again, {user_name}!")
             break
         else:
