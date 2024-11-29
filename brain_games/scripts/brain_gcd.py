@@ -28,7 +28,7 @@ def find_gcd(max_raund):
             break
         
         if correct_answer == max_raund:
-            print(f'Congratulation, {user_name}')
+            print(f'Congratulations, {user_name}')
 
 
 def main():
