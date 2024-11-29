@@ -9,11 +9,10 @@ def game_calc(max_raund):
     print('What is the result of the expression?')
     correct_answer = 0
     while correct_answer != max_raund:
-        number_a = randint(1, 10)
-        number_b = randint(1, 10)
+        number_a, number_b = randint(1, 10), randint(1, 10)
         operation_symbol = ['-', '*', '+']
         operation = randint(0, 2)
-        print(f'Question {number_a} {operation_symbol[operation]} {number_b}')
+        print(f'Question: {number_a} {operation_symbol[operation]} {number_b}')
         if operation_symbol[operation] == '+':
             correct_result = number_a + number_b
         elif operation_symbol[operation] == '-':
