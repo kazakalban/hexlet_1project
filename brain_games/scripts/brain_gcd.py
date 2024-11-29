@@ -14,9 +14,11 @@ def find_gcd(max_raund):
             number_a, number_b = randint(1, 25), randint(1, 25)
             if number_a != number_b and math.gcd(number_a, number_b) != 1:
                 break
+
         number_gcd = math.gcd(number_a, number_b)
         print(f'Question: {number_a} {number_b}')
         user_answer = prompt.integer('Your answer: ')
+
         if user_answer == number_gcd:
             print('Correct!')
             correct_answer += 1
@@ -24,6 +26,7 @@ def find_gcd(max_raund):
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{number_gcd}.\n"
                   f"Let's try again, {user_name}")
             break
+        
         if correct_answer == max_raund:
             print(f'Congratulation, {user_name}')
 
