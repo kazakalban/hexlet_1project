@@ -7,28 +7,32 @@ import prompt
 def is_even(number:int) -> bool:
     return True if number % 2 == 0 else False
 
-def game_parity_check(max_raund):
+def game_parity_check(max_rounds):
     user_name = main_user_name()
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    correct_answer = 0
-    while correct_answer != max_raund:
+    correct_answers = 0
+
+    while correct_answers < max_rounds:
         number = randint(1, 100)
         print(f'Question: {number}')
-        user_answer = prompt.string('Your answer: ')
-        answer = True if user_answer == 'yes' else False
-        if is_even(number) and answer:
-            print("Correct!")
-            correct_answer += 1
-        elif answer and is_even(number):
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was 'no'.\n"
-                      f"Let's try again, {user_name}!") if user_answer == True else print(f"'{user_answer}' is wrong answer ;(. Correct answer was 'yes'.\n"
-                      f"Let's try again, {user_name}!")
-            break
-        else:
+        user_answer = prompt.string('Your answer: ').lower()
+
+        if user_answer not in ('yes', 'no'):
             print(f"Incorrect answer. Let's try again, {user_name}!")
+            continue
+
+        correct_answer = 'yes' if is_even(number) else 'no'
+
+        if user_answer == correct_answer:
+            print("Correct!")
+            correct_answers += 1
+        else:
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"Let's try again, {user_name}!")
             break
-        if correct_answer == 3:
-            print(f'Congratulations, {user_name}!')
+
+    if correct_answers == max_rounds:
+        print(f'Congratulations, {user_name}!')
 
 
 def main():
