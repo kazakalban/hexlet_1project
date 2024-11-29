@@ -1,8 +1,8 @@
-from brain_games.cli import welcome_user as main_user_name
-from brain_games.scripts.brain_games import max_raund_game as max_raund  # Импорт количества раунда
 import prompt
-import math
 from random import randint
+import math
+from brain_games.cli import welcome_user as main_user_name
+from brain_games.scripts.brain_games import max_raund_game as max_raund
 
 
 def find_gcd(max_raund):
@@ -23,10 +23,9 @@ def find_gcd(max_raund):
             print('Correct!')
             correct_answer += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{number_gcd}.\n"
-                  f"Let's try again, {user_name}!")
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"Let's try again, {user_name}!")
             break
-        
         if correct_answer == max_raund:
             print(f'Congratulations, {user_name}!')
 

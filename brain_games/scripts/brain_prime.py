@@ -1,19 +1,19 @@
-from brain_games.cli import welcome_user as main_user_name
-from brain_games.scripts.brain_games import max_raund_game as max_raund  # Импорт количества раунда
-from random import randint
 import prompt
+from random import randint
+from brain_games.cli import welcome_user as main_user_name
+from brain_games.scripts.brain_games import max_raund_game as max_raund
 
 
-
-def chek_is_prime_number(number:int) -> bool:
-    """ Вернет True если простое, 
+def chek_is_prime_number(number: int) -> bool:
+    """ Вернет True если простое,
     если не простое тогда False"""
+
     if number <= 1:
         return False
     elif number == 2:  # 2 - единственное четное число
         return True
     elif number % 2 == 0:
-        return  False
+        return False
     n = int(number ** 0.5)
     for i in range(3, n + 1, 2):  # шаг 2 потому что проверяем нечетные числа
         if number % i == 0:
@@ -41,8 +41,8 @@ def number_is_prime(max_raunds):
             print("Correct!")
             correct_answers += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}.\n"
-                  f"Let's try again, {user_name}!")
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"Let's try again, {user_name}!")
             break
 
         if correct_answers == max_raunds:
@@ -55,5 +55,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-

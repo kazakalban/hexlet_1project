@@ -1,7 +1,7 @@
-from brain_games.cli import welcome_user as main_user_name
-from brain_games.scripts.brain_games import max_raund_game as max_raund  # Импорт количества раунда
-from random import randint
 import prompt
+from random import randint
+from brain_games.cli import welcome_user as main_user_name
+from brain_games.scripts.brain_games import max_raund_game as max_raund
 
 
 def game_calc(max_raund):
@@ -25,8 +25,9 @@ def game_calc(max_raund):
             print('Correct!')
             correct_answer += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_result}'\n"
-                  f"Let's try again, {user_name}!")
+            print(f"'{user_answer}' is wrong answer ;(.")
+            print(f"Correct answer was '{correct_answer}'")
+            print(f"Let's try again, {user_name}!")
             break
         if correct_answer == 3:
             print(f'Congratulations, {user_name}!')

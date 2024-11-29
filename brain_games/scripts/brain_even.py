@@ -1,11 +1,12 @@
-from brain_games.cli import welcome_user as main_user_name
-from brain_games.scripts.brain_games import max_raund_game as max_raund  # Импорт количества раунда
-from random import randint
 import prompt
+from random import randint
+from brain_games.cli import welcome_user as main_user_name
+from brain_games.scripts.brain_games import max_raund_game as max_raund
 
 
-def is_even(number:int) -> bool:
+def is_even(number: int) -> bool:
     return True if number % 2 == 0 else False
+
 
 def game_parity_check(max_rounds):
     user_name = main_user_name()
