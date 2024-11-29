@@ -1,5 +1,5 @@
 from random import randint  # Стандартная библиотека
-import math
+from math import gcd
 
 import prompt  # Внешние библиотеки
 
@@ -14,10 +14,10 @@ def find_gcd(max_raund):
     while correct_answer < max_raund:
         while True:
             number_a, number_b = randint(1, 25), randint(1, 25)
-            if number_a != number_b and math.gcd(number_a, number_b) != 1:
+            if number_a != number_b and gcd(number_a, number_b) != 1:
                 break
 
-        number_gcd = math.gcd(number_a, number_b)
+        number_gcd = gcd(number_a, number_b)
         print(f'Question: {number_a} {number_b}')
         user_answer = prompt.integer('Your answer: ')
 

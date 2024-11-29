@@ -17,7 +17,7 @@ def chek_is_prime_number(number: int) -> bool:
     elif number % 2 == 0:
         return False
     n = int(number ** 0.5)
-    for i in range(3, n + 1, 2):  
+    for i in range(3, n + 1, 2):
         # шаг 2 потому что проверяем нечетные числа
         if number % i == 0:
             return False  # найден делитель

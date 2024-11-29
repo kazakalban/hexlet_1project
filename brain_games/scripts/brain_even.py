@@ -7,7 +7,7 @@ from brain_games.scripts.brain_games import max_raund_game as max_raund
 
 
 def is_even(number: int) -> bool:
-    return number % 2 == 0 
+    return number % 2 == 0
 
 
 def game_parity_check(max_rounds):
