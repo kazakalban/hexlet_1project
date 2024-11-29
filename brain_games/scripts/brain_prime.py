@@ -1,7 +1,11 @@
+from brain_games.cli import welcome_user as main_user_name
+from brain_games.scripts.brain_games import max_raund_game as max_raund  # Импорт количества раунда
 from random import randint
-from math import sqrt
 import prompt
-def chek_is_prime_number(number = 3):
+
+
+
+def chek_is_prime_number(number:int) -> bool:
     """ Вернет True если простое, 
     если не простое тогда False"""
     if number <= 1:
@@ -18,34 +22,38 @@ def chek_is_prime_number(number = 3):
 
 
 def number_is_prime(max_raund):
-    #user_name = main_user_name()
-    user_name = 'Kasym'
+    user_name = main_user_name()
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
-    correct_answer = 0
-    while correct_answer != max_raund:
+    correct_answers = 0
+
+    while correct_answers < max_raund:
         number = randint(1, 100)
         print(f'Question: {number}')
-        
-        user_answer = prompt.string('Your answer: ')
-        if chek_is_prime_number(number) and user_answer == 'yes':
-            print("Correct!")
-            correct_answer += 1
-        elif chek_is_prime_number(number) != True and user_answer == 'no':
-            print("Correct!")
-            correct_answer += 1
-        elif user_answer == 'yes' or user_answer == 'no':
-            if user_answer == 'yes':
-                print(f"'{user_answer}' is wrong answer ;(. Correct answer was 'no'.\n"
-                      f"Let's try again, {user_name}!")
-            elif user_answer == 'no':
-                print(f"'{user_answer}' is wrong answer ;(. Correct answer was 'yes'.\n"
-                      f"Let's try again, {user_name}!")
-            break
-        else:
+        user_answer = prompt.string('Your answer: ').lower()
+
+        if user_answer not in ('yes', 'no'):
             print(f"Incorrect answer. Let's try again, {user_name}!")
             break
+
+        correct_answer = 'yes' if chek_is_prime_number(number) else 'no'
+
+        if user_answer == correct_answer:
+            print("Correct!")
+            correct_answers += 1
+        else:
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"Let's try again, {user_name}")
+            break
+
         if correct_answer == 3:
             print(f'Congratulations, {user_name}!')
 
 
-number_is_prime(3)
+def main():
+    number_is_prime(max_raund)
+
+
+if __name__ == "__main__":
+    main()
+
+
