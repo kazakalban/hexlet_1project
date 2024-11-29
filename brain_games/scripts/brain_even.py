@@ -19,7 +19,7 @@ def game_parity_check(max_rounds):
 
         if user_answer not in ('yes', 'no'):
             print(f"Incorrect answer. Let's try again, {user_name}!")
-            continue
+            break
 
         correct_answer = 'yes' if is_even(number) else 'no'
 
