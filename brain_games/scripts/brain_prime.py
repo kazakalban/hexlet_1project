@@ -41,8 +41,8 @@ def number_is_prime(max_raunds):
             print("Correct!")
             correct_answers += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
-            print(f"Let's try again, {user_name}")
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}.\n"
+                  f"Let's try again, {user_name}!")
             break
 
         if correct_answers == max_raunds:
