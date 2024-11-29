@@ -1,4 +1,5 @@
 from random import randint  # Стандартная библиотека
+import math
 
 import prompt  # Внешние библиотеки
 

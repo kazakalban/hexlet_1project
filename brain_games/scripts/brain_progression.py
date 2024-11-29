@@ -1,6 +1,8 @@
-from random import randint
-import prompt
-from brain_games.cli import welcome_user as main_user_name
+from random import randint  # Стандартная библиотека
+
+import prompt  # Внешние библиотеки
+
+from brain_games.cli import welcome_user as main_user_name  # Локальные модули
 from brain_games.scripts.brain_games import max_raund_game as max_raund
 
 
