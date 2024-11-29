@@ -21,7 +21,7 @@ def find_progression(max_raund):
         secret_position = randint(0, list_len - 1)  # определим позицию для скрытия
         secret_number = progress_list[secret_position]  # сохраняем правильный число
         progress_list[secret_position] = '..'
-        print('Question: ', *progress_list)
+        print('Question:', *progress_list)
         user_answer = prompt.integer('Your answer: ')
         if user_answer == secret_number:
             print('Correct!')
