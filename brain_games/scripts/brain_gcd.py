@@ -24,11 +24,11 @@ def find_gcd(max_raund):
             correct_answer += 1
         else:
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{number_gcd}.\n"
-                  f"Let's try again, {user_name}")
+                  f"Let's try again, {user_name}!")
             break
         
         if correct_answer == max_raund:
-            print(f'Congratulations, {user_name}')
+            print(f'Congratulations, {user_name}!')
 
 
 def main():
