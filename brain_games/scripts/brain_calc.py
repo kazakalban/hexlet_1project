@@ -1,5 +1,5 @@
-import prompt
 from random import randint
+import prompt
 from brain_games.cli import welcome_user as main_user_name
 from brain_games.scripts.brain_games import max_raund_game as max_raund
 

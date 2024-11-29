@@ -1,5 +1,5 @@
-import prompt
 from random import randint
+import prompt
 from brain_games.cli import welcome_user as main_user_name
 from brain_games.scripts.brain_games import max_raund_game as max_raund
 
@@ -41,7 +41,8 @@ def number_is_prime(max_raunds):
             print("Correct!")
             correct_answers += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"'{user_answer}' is wrong answer ;(.")
+            print(f"Correct answer was '{correct_answer}'")
             print(f"Let's try again, {user_name}!")
             break
 

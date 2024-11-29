@@ -1,5 +1,5 @@
-import prompt
 from random import randint
+import prompt
 from brain_games.cli import welcome_user as main_user_name
 from brain_games.scripts.brain_games import max_raund_game as max_raund
 
@@ -23,11 +23,13 @@ def find_progression(max_raund):
         progress_list[secret_position] = '..'
         print('Question:', *progress_list)
         user_answer = prompt.integer('Your answer: ')
+        
         if user_answer == secret_number:
             print('Correct!')
             correct_answer += 1
         else:
-            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.")
+            print(f"'{user_answer}' is wrong answer ;(.")
+            print(f"Correct answer was '{correct_answer}'")
             print(f"Let's try again, {user_name}!")
             break
         if correct_answer == 3:
