@@ -7,7 +7,6 @@ from brain_games.cli import welcome_user as main_user_name  # Локальные
 from brain_games.scripts.brain_games import max_raund_game as max_raund
 
 
-
 def find_gcd(max_raund):
     user_name = main_user_name()
     correct_answer = 0
