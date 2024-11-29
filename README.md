@@ -21,3 +21,6 @@ show 1-project 7-step
 
 show 1-project 8-step
 [![asciicast](https://asciinema.org/a/z0yPUvKqE7XhwAXtZmFuF7kAP.svg)](https://asciinema.org/a/z0yPUvKqE7XhwAXtZmFuF7kAP)
+
+show 1-project 9-step
+[![asciicast](https://asciinema.org/a/SIznOvdIrw2rht6UwvZzBwiJV.svg)](https://asciinema.org/a/SIznOvdIrw2rht6UwvZzBwiJV)
