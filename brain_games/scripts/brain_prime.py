@@ -3,6 +3,7 @@ from random import randint  # Стандартная библиотека
 import prompt  # Внешние библиотеки
 
 from brain_games.cli import welcome_user as main_user_name  # Локальные модули
+
 from brain_games.scripts.brain_games import max_raund_game as max_raund
 
 
@@ -17,7 +18,8 @@ def chek_is_prime_number(number: int) -> bool:
     elif number % 2 == 0:
         return False
     n = int(number ** 0.5)
-    for i in range(3, n + 1, 2):  # шаг 2 потому что проверяем нечетные числа
+    for i in range(3, n + 1, 2):  
+        # шаг 2 потому что проверяем нечетные числа
         if number % i == 0:
             return False  # найден делитель
     return True
