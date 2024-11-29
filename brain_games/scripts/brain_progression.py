@@ -28,7 +28,7 @@ def find_progression(max_raund):
             correct_answer += 1
         else:
             print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{secret_number}'\n"
-                  f"Let's try again,{user_name}!")
+                  f"Let's try again, {user_name}!")
             break
         if correct_answer == 3:
             print(f'Congratulations, {user_name}!')
