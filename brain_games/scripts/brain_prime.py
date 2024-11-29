@@ -21,12 +21,12 @@ def chek_is_prime_number(number:int) -> bool:
     return True
 
 
-def number_is_prime(max_raund):
+def number_is_prime(max_raunds):
     user_name = main_user_name()
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
     correct_answers = 0
 
-    while correct_answers < max_raund:
+    while correct_answers < max_raunds:
         number = randint(1, 100)
         print(f'Question: {number}')
         user_answer = prompt.string('Your answer: ').lower()
@@ -45,7 +45,7 @@ def number_is_prime(max_raund):
             print(f"Let's try again, {user_name}")
             break
 
-        if correct_answer == 3:
+        if correct_answers == max_raunds:
             print(f'Congratulations, {user_name}!')
 
 
