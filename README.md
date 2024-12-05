@@ -19,16 +19,16 @@ date 19.11.2024
 
 
 1. **Create a virtual enviroment**:
-    '''sh
-    python3 -m venv .venv
-    '''
+```sh
+python3 -m venv .venv
+```
     
 2. **Activate the virtual enviroment**:
 - On Windows:
 ```sh
 .\.venv\Scripts\activate
 ```
--On macOS\Linux
+- On macOS\Linux
 ```sh 
 source .venv/bin/activate
 ```
