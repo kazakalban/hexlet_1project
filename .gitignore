@@ -45,4 +45,6 @@ doc
 .idea/
 app/assets/builds/
 
+__pycache__
+dist
 #/errors
