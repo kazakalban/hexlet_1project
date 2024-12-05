@@ -18,25 +18,25 @@ date 19.11.2024
 ### Using a virtual enviroment
 
 
-    1. **Create a virtual enviroment**:
+1. **Create a virtual enviroment**:
     '''sh
     python3 -m venv .venv
     '''
     
-    2. **Activate the virtual enviroment**:
-    - On Windows:
-    '''sh
-    .\.venv\Scripts\activate
-    '''
-    -On macOS\Linux
-    '''sh 
-    source .venv/bin/activate
-    '''
+2. **Activate the virtual enviroment**:
+- On Windows:
+```sh
+.\.venv\Scripts\activate
+```
+-On macOS\Linux
+```sh 
+source .venv/bin/activate
+```
 
-    3. Install the package from GitHub**:
-    '''sh
-    pip install git+https://github.com/kazakalban/python-project-49.git
-    '''
+3. Install the package from GitHub**:
+```sh
+pip install git+https://github.com/kazakalban/python-project-49.git
+```
 
 ## Usage
 **To start the 'even number' game, run**:
