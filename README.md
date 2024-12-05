@@ -41,18 +41,22 @@ date 19.11.2024
 ## Usage
 **To start the 'even number' game, run**:
 '''sh brain-even '''
+
 **To start the 'calculator' game, run**:
 ''sh
 brain-calc
 '''
+
 **To start the 'greatest common divisor (GCD)' game, run**:
 ''sh
 brain-gcd
 '''    
+
 **To start the 'prime number' game, run**:
 ''sh
 brain-prime
 '''
+
 **To start the 'arithmetic progression' game, run**:
 ''sh
 brain-progression
