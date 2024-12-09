@@ -1,6 +1,5 @@
 from prompt import string
 
-# Количество раундов
 MAX_ROUNDS = 3
 
 
