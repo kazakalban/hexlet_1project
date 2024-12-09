@@ -24,5 +24,5 @@ def generate_question_and_answer():
     # сохраняем правильный число
     correct_answer = progress_list[secret_position]
     progress_list[secret_position] = '..'
-    question = str(*progress_list)
+    question = " ".join(map(str, progress_list))
     return question, correct_answer
