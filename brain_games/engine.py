@@ -36,4 +36,4 @@ def run_game(game):
             print(f"Let's try again, {name}!")
             return
         # Поздравление если победил
-        print(f'Congratulations, {name}!')
+    print(f'Congratulations, {name}!')
