@@ -23,4 +23,4 @@ def generate_question_and_answer():
     elif operation_symbol[operation] == '*':
         correct_answer = number_1 * number_2
 
-    return question, correct_answer
+    return question, str(correct_answer)
