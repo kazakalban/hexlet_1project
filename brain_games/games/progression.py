@@ -25,4 +25,4 @@ def generate_question_and_answer():
     correct_answer = progress_list[secret_position]
     progress_list[secret_position] = '..'
     question = " ".join(map(str, progress_list))
-    return question, correct_answer
+    return question, str(correct_answer)
