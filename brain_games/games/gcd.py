@@ -2,7 +2,6 @@ from math import gcd
 from random import randint
 
 
-# Описание игры
 DESCRIPTION = 'Find the greatest common divisor of given numbers.'
 
 

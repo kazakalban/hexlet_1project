@@ -1,7 +1,6 @@
 from random import randint
 
 
-# Описание игры
 DESCRIPTION = "What is the result of the expression?"
 
 
