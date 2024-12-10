@@ -1,5 +1,6 @@
-from brain_games.cli import welcome_user
-from prompt import string
+from prompt import string  # Внешняя библиотека
+
+from brain_games.cli import welcome_user  # Локальный модуль
 
 MAX_ROUNDS = 3
 
