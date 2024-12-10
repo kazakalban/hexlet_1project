@@ -4,7 +4,7 @@ from brain_games.games import calc
 
 def main():
     """
-    Дверь для игры Калькулятор.
+    Точка входа для игры Калькулятор.
     """
     run_game(calc)
 

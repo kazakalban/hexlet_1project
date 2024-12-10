@@ -4,7 +4,7 @@ from brain_games.games import prime
 
 def main():
     """
-    Дверь для игры Проверка на простоту.
+    Точка входа для игры Проверка на простоту.
     """
     run_game(prime)
 

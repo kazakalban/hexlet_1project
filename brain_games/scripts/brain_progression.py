@@ -4,7 +4,7 @@ from brain_games.games import progression
 
 def main():
     """
-    Дверь для игры найди пропущенное число.
+    Точка входа для игры найди пропущенное число.
     """
     run_game(progression)
 

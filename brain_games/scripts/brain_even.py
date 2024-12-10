@@ -4,7 +4,7 @@ from brain_games.games import even
 
 def main():
     """
-    Дверь для игры Проверка на четность.
+    Точка входа для игры Проверка на четность.
     """
     run_game(even)
 

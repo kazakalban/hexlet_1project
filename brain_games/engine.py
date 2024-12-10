@@ -1,19 +1,15 @@
 from prompt import string
+from brain_games.cli import welcome_user
 
 MAX_ROUNDS = 3
 
 
 def run_game(game):
     """
-    Движок для запуска игры, принимает на вход объект игры, возвращает игры
+    Движок для запуска игры, принимает на вход объект игры
     """
     # Приветствие
-    print('Welcome to the Brain Games!')
-    # Запрос имени
-    name = string('May I have your name? ')
-    print(f'Hello, {name}!')
-    # Описание игры
-    print(game.DESCRIPTION)
+    name = welcome_user()
 
     # Количества правильных ответов
     correct_answers = 0

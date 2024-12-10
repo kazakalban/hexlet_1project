@@ -4,7 +4,7 @@ from brain_games.games import gcd
 
 def main():
     """
-    Дверь для игры НОД.
+    Точка входа для игры НОД.
     """
     run_game(gcd)
 
