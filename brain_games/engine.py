@@ -10,7 +10,8 @@ def run_game(game):
     """
     # Приветствие
     name = welcome_user()
-
+    # Описание игры
+    print(game.DESCRIPTION)
     # Количества правильных ответов
     correct_answers = 0
     # Играем пока правильный ответ не равно MAX_ROUNDS
