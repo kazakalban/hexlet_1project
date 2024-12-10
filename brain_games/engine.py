@@ -1,5 +1,5 @@
-from prompt import string
 from brain_games.cli import welcome_user
+from prompt import string
 
 MAX_ROUNDS = 3
 
